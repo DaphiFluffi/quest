@@ -1,0 +1,22 @@
+// Function to find the maximum of two numbers
+public class Main {
+    public static int findMax(int a, int b) {
+        return (a > b) ? a : b;
+    }
+
+    // List of even numbers
+    public static List<Integer> getEvenNumbers(int limit) {
+        List<Integer> evens = new ArrayList<>();
+        for (int i = 0; i < limit; i++) {
+            if (i % 2 == 0) {
+                evens.add(i);
+            }
+        }
+        return evens;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Max: " + findMax(10, 20));
+        System.out.println("Evens: " + getEvenNumbers(20));
+    }
+}
